@@ -1,0 +1,10 @@
+{
+    "appName": "PrimeTime",
+    "welcome": "Тавтай морилно уу!",
+    "sign": " Нэвтрэх",
+    "signup": "Бүртгүүлэх",
+    "alreadyHaveAnAccount": "Бүртгэлтэй юу ? ",
+    "dontHaveanAccount": "Бүртгүүлэх үү ? ",
+    "phoneNumber": "Утасны дугаар",
+    "password": "Нууц үг",
+}
