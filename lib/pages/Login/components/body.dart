@@ -4,8 +4,8 @@ import 'package:primetime/components/rounded_button.dart';
 import 'package:primetime/pages/Login/components/already_have_account.dart';
 import 'package:primetime/pages/Login/components/background.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:primetime/pages/Login/components/rounded_input_field.dart';
-import 'package:primetime/pages/Login/components/rounded_password_field.dart';
+import 'package:primetime/components/rounded_input_field.dart';
+import 'package:primetime/components/rounded_password_field.dart';
 import 'package:primetime/pages/Signup/signup_page.dart';
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -22,7 +22,7 @@ class Body extends StatelessWidget {
             SizedBox(height: size.height * 0.03,),
             SvgPicture.asset("assets/icons/login.svg", height: size.height * 0.35,),
             RoundedInputField(
-              hintText: "Утасны дугаар", 
+              hintText: AppLocalizations.of(context)!.phoneNumber, 
               icon: Icons.phone, 
               onChanged: (value){}
               ),

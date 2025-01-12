@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:primetime/constants/constants.dart';
-import 'package:primetime/pages/Login/components/text_field_container.dart';
+import 'package:primetime/components/rounded_text_field_container.dart';
 class RoundedInputField extends StatelessWidget {
   final String hintText;
   final IconData icon;
@@ -11,7 +11,7 @@ class RoundedInputField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFieldContainer(
+    return RoundedTextFieldContainer(
       child: TextField(
         onChanged: onChanged,
         decoration: InputDecoration(

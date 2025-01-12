@@ -3,8 +3,8 @@
     "welcome": "Welcome to ",
     "sign": "Sign",
     "signup": "Sign Up",
-    "alreadyHaveAnAccount": "Already have an Account ? ",
-    "dontHaveanAccount": "Don't have an Account ? ",
+    "alreadyHaveAnAccount": "Already have an Account?",
+    "dontHaveanAccount": "Don't have an Account?",
     "phoneNumber": "Your Phone",
-    "password": "Password",
+    "password": "Password"
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:primetime/constants/constants.dart';
 
-class TextFieldContainer extends StatelessWidget {
+class SquaredTextFieldContainer extends StatelessWidget {
   final Widget child;
-  const TextFieldContainer({
+  const SquaredTextFieldContainer({
     super.key,
     required this.child
   });
@@ -12,12 +12,10 @@ class TextFieldContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10),
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-      width: size.width * 0.8,
+      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 2),
+      width: size.width * 0.9,
       decoration: BoxDecoration(
-        color: kPrimaryLightColor,
-        borderRadius: BorderRadius.circular(29)
+        borderRadius: BorderRadius.circular(15)
       ),
       child: child
     );
