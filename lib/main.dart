@@ -26,7 +26,8 @@ class MyApp extends StatelessWidget {
       title: 'PrimeTime',
       theme: ThemeData(
         primaryColor: kPrimaryColor,
-        scaffoldBackgroundColor: Colors.white
+        scaffoldBackgroundColor: Colors.white,
+        useMaterial3: true,
       ),
       locale: Locale('mn'),
       home: const OrganizaionPage(), // Ensure HomePage is set as the home

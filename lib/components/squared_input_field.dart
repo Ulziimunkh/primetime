@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:primetime/constants/constants.dart';
 import 'package:primetime/components/squared_text_field_container.dart';
@@ -7,9 +9,10 @@ class SquaredInputField extends StatelessWidget {
   final String helperText;
   final TextInputType textInputType;
   final IconData icon;
+  final int maxLength;
   final ValueChanged<String> onChanged;
   const SquaredInputField({
-    super.key, required this.labelText, required this.hintText, this.helperText = '', this.textInputType = TextInputType.text, this.icon = Icons.phone, required this.onChanged,
+    super.key, required this.labelText, required this.hintText, this.helperText = '', this.textInputType = TextInputType.text, this.icon = Icons.phone, this.maxLength = 100, required this.onChanged,
   });
 
   @override
@@ -18,8 +21,8 @@ class SquaredInputField extends StatelessWidget {
       child: TextField(
         onChanged: onChanged,
         keyboardType: textInputType,
-    
-        decoration: InputDecoration(
+        maxLength: maxLength,
+          decoration: InputDecoration(
           prefixIcon: Icon(icon, color: kPrimaryColor),
           suffixIcon: Icon(Icons.info, color: kPrimaryInfoIconColor),
           labelText: labelText,
