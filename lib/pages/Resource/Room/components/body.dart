@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-
 import 'package:primetime/pages/Organization/components/background.dart';
-import 'package:primetime/pages/Organization/components/org_contact_address.dart';
-import 'package:primetime/pages/Organization/components/org_entry.dart';
+import 'package:primetime/pages/Resource/Room/components/room_entry.dart';
+import 'package:primetime/pages/Resource/Room/rooms_page.dart';
 
 class Body extends StatefulWidget {
   const Body({super.key});
@@ -23,7 +21,7 @@ class _BodyState extends State<Body> {
           constraints: BoxConstraints(
             maxHeight: size.height,
           ),
-          child: OrgEntry(),
+          child: RoomsPage(),
         ),
       ),
       );

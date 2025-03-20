@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:primetime/constants/constants.dart';
 import 'package:primetime/pages/Login/login_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -13,8 +14,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
+    return PlatformProvider(
+      builder: (context) => 
+       PlatformTheme(
+        builder: (context) => PlatformApp(
+        debugShowCheckedModeBanner: false,
         localizationsDelegates: [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
@@ -22,15 +26,11 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
   ],
       supportedLocales: AppLocalizations.supportedLocales,
-  
       title: 'PrimeTime',
-      theme: ThemeData(
-        primaryColor: kPrimaryColor,
-        scaffoldBackgroundColor: Colors.white,
-        useMaterial3: true,
-      ),
       locale: Locale('mn'),
       home: const OrganizaionPage(), // Ensure HomePage is set as the home
+    ),
+       ),
     );
   }
 }

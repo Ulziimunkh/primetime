@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:primetime/constants/constants.dart';
 import 'package:primetime/components/squared_text_field_container.dart';

@@ -6,7 +6,8 @@ enum BusinessType {
   barbershop('Barbershop', 'Үсчин'),
   beautySalon('BeautySalon','Гоо Сайхны салон'),
   manicureAndPedicure('ManicureAndPedicure','Маникюр, Педикюр'),
-  therapyService('TherapyService','Алжаал тайлах төв');
+  therapyService('TherapyService','Алжаал тайлах төв'),
+  karaoke('Karaoke','Караоке');
 
   const BusinessType(this.code, this.name);
   final String code;
