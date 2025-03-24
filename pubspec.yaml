@@ -39,6 +39,7 @@ dependencies:
   flutter_svg: ^2.0.16
   collection: ^1.19.0
   image_picker: ^0.8.7+4
+  carousel_slider: ^5.0.0
   flutter_localizations:
     sdk: flutter
   intl: any

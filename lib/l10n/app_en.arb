@@ -8,5 +8,22 @@
     "phoneNumber": "Your Phone",
     "password": "Password",
     "next": "Next",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "addRoom": "Add Room",
+    "roomList": "Room List",
+    "roomNumber": "Room Number",
+    "enterRoomNumber": "Enter Room Number",
+    "roomName": "Room Name",
+    "enterRoomName": "Enter Room Name",
+    "hourlyRate": "Hourly Rate",
+    "capacity": "Capacity",
+    "isVip": "Is VIP",
+    "addImage": "Add Image",
+    "save": "Save",
+    "fillAllFields": "Please fill all fields",
+    "priceTable": "Price Table",
+    "uploadPriceTable": "Upload price table or menu as an image:",
+    "noImagesUploaded": "No images uploaded yet.",
+    "chooseFromGallery": "Choose from Gallery",
+    "useCamera": "Use Camera"
 }

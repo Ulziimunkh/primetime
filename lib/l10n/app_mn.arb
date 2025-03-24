@@ -8,5 +8,22 @@
     "phoneNumber": "Утасны дугаар",
     "password": "Нууц үг",
     "next": "Дараагийн",
-    "cancel": "Болих"
+    "cancel": "Болих",
+    "addRoom": "Өрөө нэмэх",
+    "roomList": "Өрөөний жагсаалт",
+    "roomNumber": "Өрөөний дугаар",
+    "enterRoomNumber": "Өрөөний дугаар оруулна уу",
+    "roomName": "Өрөөний нэр",
+    "enterRoomName": "Өрөөний нэр оруулна уу",
+    "hourlyRate": "Цагийн үнэлгээ",
+    "capacity": "Багтаамж",
+    "isVip": "VIP эсэх",
+    "addImage": "Зураг нэмэх",
+    "save": "Хадгалах",
+    "fillAllFields": "Бүх талбарыг бөглөнө үү",
+    "priceTable": "Үнийн жагсаалт",
+    "uploadPriceTable": "Үнийн жагсаалт эсвэл меню зураг оруулах:",
+    "noImagesUploaded": "Одоогоор зураг оруулаагүй байна.",
+    "chooseFromGallery": "Галерейгээс сонгох",
+    "useCamera": "Камер ашиглах"
 }
