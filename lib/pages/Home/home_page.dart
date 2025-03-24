@@ -68,28 +68,32 @@ class _HomePageState extends State<HomePage> {
     "details": "Indulge in luxury experiences and premium services."
   },
 ];
-  final List<Map<String, String>> featuredServices = [
-    {
-      "name": "Prime Karaoke",
-      "imagePath": 'assets/images/slider-image-6.jpg',
-      "details": "Enjoy the best karaoke experience in town.",
-    },
-    {
-      "name": "Spa Bliss",
-      "imagePath": 'assets/images/slider-image-2.jpg',
-      "details": "Relax and rejuvenate at our premium spa.",
-    },
-    {
-      "name": "Salon Beauty",
-      "imagePath": 'assets/images/slider-image-4.jpg',
-      "details": "Get a modern haircut and styling at our salon.",
-    },
-    {
-      "name": "Hair Salon and Wellness center",
-      "imagePath": 'assets/images/slider-image-3.jpg',
-      "details": "Build your stunning new style with us and wellness centers.",
-    },
-  ];
+ final List<Map<String, String>> featuredServices = [
+  {
+    "name": "Prime Karaoke",
+    "imagePath": 'assets/images/slider-image-6.jpg',
+    "details": "Enjoy the best karaoke experience in town.",
+    "location": "Downtown",
+  },
+  {
+    "name": "Spa Bliss",
+    "imagePath": 'assets/images/slider-image-2.jpg',
+    "details": "Relax and rejuvenate at our premium spa.",
+    "location": "Uptown",
+  },
+  {
+    "name": "Salon Beauty",
+    "imagePath": 'assets/images/slider-image-4.jpg',
+    "details": "Get a modern haircut and styling at our salon.",
+    "location": "Midtown",
+  },
+  {
+    "name": "Hair Salon and Wellness Center",
+    "imagePath": 'assets/images/slider-image-3.jpg',
+    "details": "Build your stunning new style with us and wellness centers.",
+    "location": "Downtown",
+  },
+];
   @override
   void initState() {
     super.initState();
@@ -415,20 +419,22 @@ class _HomePageState extends State<HomePage> {
                   return GestureDetector(
                     onTap: () {
                       print("Clicked on: ${service['name']}");
+                      // Handle navigation or action
                     },
                     child: Card(
                       margin: const EdgeInsets.symmetric(vertical: 8.0),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(15.0),
                       ),
-                      elevation: 2,
+                      elevation: 4,
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Row(
                           children: [
+                            // Image Section
                             Container(
-                              width: 80,
-                              height: 80,
+                              width: 100,
+                              height: 100,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10.0),
                                 image: DecorationImage(
@@ -438,6 +444,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ),
                             const SizedBox(width: 16),
+                            // Text Section
                             Expanded(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -458,6 +465,24 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                     maxLines: 2,
                                     overflow: TextOverflow.ellipsis,
+                                  ),
+                                  const SizedBox(height: 8),
+                                  Row(
+                                    children: [
+                                      const Icon(
+                                        Icons.location_on,
+                                        size: 16,
+                                        color: Colors.red,
+                                      ),
+                                      const SizedBox(width: 4),
+                                      Text(
+                                        service["location"] ?? "Unknown location",
+                                        style: const TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ],
                               ),
