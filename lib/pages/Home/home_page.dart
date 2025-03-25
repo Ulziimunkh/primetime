@@ -262,6 +262,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    Size size =  MediaQuery.of(context).size;
     print("Building HomePage with ${filteredServices.length} filtered services");
     return Scaffold(
       appBar: AppBar(
@@ -357,7 +358,7 @@ class _HomePageState extends State<HomePage> {
                         child: Stack(
                           children: [
                             Container(
-                              width: MediaQuery.of(context).size.width,
+                              width:size.width,
                               margin: const EdgeInsets.symmetric(horizontal: 5.0),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10.0),
